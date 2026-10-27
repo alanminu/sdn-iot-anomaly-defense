@@ -1,0 +1,20 @@
+# ML / data pipeline (data_prep.py, train_model.py, shared/mitigation_logic.py)
+numpy
+pandas
+scikit-learn
+xgboost
+joblib
+matplotlib
+seaborn
+
+# SDN testbed (mininet_topo/, demo/live_ovs_demo.py)
+# Install via apt, not pip:
+#   sudo apt-get install -y mininet openvswitch-switch openvswitch-common \
+#                            iputils-ping hping3 tcpdump net-tools
+#
+# Ryu controller (controller/ryu_mitigation_app.py)
+# Ryu is old and fussy about Python versions. Easiest path: a dedicated
+# Python 3.8-3.11 virtualenv. See README.md "Setting up Ryu" for the exact
+# commands, including two one-line compatibility fixes this project needed
+# on a very recent Python (3.11+) / setuptools combination.
+#   ryu
